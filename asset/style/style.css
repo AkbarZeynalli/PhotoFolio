@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+.navbar {
+  background-color: #000 !important;
+  a {
+    color: grey;
+  }
+  a:hover {
+    color: white;
+  }
+}
+.navbar-brand {
+  margin-right: 20rem;
+}
+.navbar-brand {
+  i:hover {
+    color: green;
+  }
+}
+.navbar-text {
+  i {
+    gap: 55px !important;
+    color: grey !important;
+  }
+  i:hover {
+    color: white;
+  }
+}
+main {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 456px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-out {
+  max-width: 1140px;
+  height: 275px;
+}
+.content {
+  width: 570px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Cardo", sans-serif;
+  }
+  button {
+    font-weight: 400;
+    font-size: 14px;
+    width: 50%;
+    padding: 12px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+/* background-image: url(../img/gallery-1.jpg);
+  background-size: cover; */
+.item1 {
+  grid-area: img1;
+}
+.item2 {
+  grid-area: img2;
+}
+.item3 {
+  grid-area: img3;
+}
+.item4 {
+  grid-area: img4;
+}
+.item5 {
+  grid-area: img5;
+}
+.item6 {
+  grid-area: img6;
+}
+.item7 {
+  grid-area: img7;
+}
+.item8 {
+  grid-area: img8;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8";
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.grid-container > div {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 192px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.footer-icon {
+  color: white;
+  i {
+    padding: 10px;
+  }
+}
